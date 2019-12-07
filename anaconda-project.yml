@@ -24,7 +24,10 @@ description: Example notebook running in docker with anaconda project
 # In the commands section, list your runnable scripts, notebooks, and other code.
 # Use `anaconda-project add-command` to add commands.
 #
-commands: {default: {notebook: notebook.ipynb, env_spec: default}}
+commands:
+  default:
+    notebook: notebook.ipynb
+    env_spec: default
 
 #
 # In the variables section, list any environment variables your code depends on.
