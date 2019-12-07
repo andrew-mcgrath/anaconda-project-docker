@@ -4,9 +4,12 @@ RUN /opt/conda/bin/conda create -n project -c defaults -c conda-forge anaconda-p
 
 COPY --chown=anaconda:anaconda anaconda-project.yml /opt/project/
 COPY --chown=anaconda:anaconda notebook.ipynb /opt/project/
+COPY --chown=anaconda:anaconda jupyter_notebook_config.py /opt/project/
 
 EXPOSE 8888
 
 RUN /opt/conda/bin/conda run -n project anaconda-project prepare --directory /opt/project
 
-ENTRYPOINT /opt/conda/bin/conda run -n project anaconda-project run --directory /opt/project default --no-browser
+ENTRYPOINT /opt/conda/bin/conda run -n project anaconda-project run \
+  --directory /opt/project default --no-browser \
+  --config /opt/project/jupyter_notebook_config.py

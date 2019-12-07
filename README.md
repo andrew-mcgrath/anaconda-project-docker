@@ -10,7 +10,7 @@ docker build -t anaconda-project .
 # Run
 
 ```bash
-docker run -it --rm anaconda-project -e 8888:8888
+docker run -it --rm anaconda-project -p 8888:8888
 ```
 
 # Trusting the notebook
