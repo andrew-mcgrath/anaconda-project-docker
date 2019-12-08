@@ -1,6 +1,11 @@
 FROM continuumio/miniconda3:4.7.12-alpine
 
-# Labels.
+# Build Args
+ARG BUILD_DATE
+ARG VCS_REF
+ARG BUILD_VERSION
+
+# Labels
 LABEL org.label-schema.schema-version="1.0"
 LABEL org.label-schema.build-date=$BUILD_DATE
 LABEL org.label-schema.name="amcgrath/ap-trusted-notebook"

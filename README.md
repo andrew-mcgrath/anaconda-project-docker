@@ -13,8 +13,11 @@ The container delivers is a trusted jupyter notebook, exposed via http, on port 
 To build the container image simply execute a standard docker build command.
 
 ```bash
-docker build --build-arg VCS_REF=$(git rev-parse --short HEAD) \
-  --build-arg BUILD_DATE=$(date -u +”%Y-%m-%dT%H:%M:%SZ”) -t ap-trusted-notebook .
+docker build \
+  --build-arg VCS_REF=$(git rev-parse --short HEAD) \
+  --build-arg BUILD_DATE=$(date -u +”%Y-%m-%dT%H:%M:%SZ”) \
+  --build-arg BUILD_VERSION=$(git describe --tags --dirty) \
+  -t ap-trusted-notebook .
 ```
 
 ### Run
