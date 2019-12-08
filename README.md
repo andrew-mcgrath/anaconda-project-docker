@@ -1,12 +1,12 @@
 # Purpose
 
-This project was created to prove if an `anaconda-project` could be used to serve up trusted `jupyter notebooks` via
-a docker container for deployment in either a local workstation or a remote orchestration service such as `kubernetes` 
-or the AWS Elastic Container Service (ECS).
-
-What the container delivers is a trusted jupyter notebook, exposed via http, on port 8888.
+This project was created to prove if an `anaconda-project` could be used to serve up a trusted `jupyter` notebook via
+a docker container. This container could then be deployed either on a local workstation or to a remote orchestration 
+service such as `kubernetes` or the AWS Elastic Container Service (ECS).
 
 ## Docker
+
+The container delivers is a trusted jupyter notebook, exposed via http, on port 8888.
 
 ### Build
 
