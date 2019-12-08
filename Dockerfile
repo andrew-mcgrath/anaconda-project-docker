@@ -8,7 +8,7 @@ RUN /opt/conda/bin/conda create -n project -c defaults -c conda-forge anaconda-p
 COPY --chown=anaconda:anaconda anaconda-project.yml /opt/project/
 COPY --chown=anaconda:anaconda notebook.ipynb /opt/project/
 COPY --chown=anaconda:anaconda jupyter_notebook_config.py /opt/project/
-COPY --chown=anaconda:anaconda docker-entrypoint.sh /home/anaconda/docker-entrypoint.sh
+COPY --chown=anaconda:anaconda docker-entrypoint.sh /
 
 # expose the jupyter notebook default port
 EXPOSE 8888
@@ -17,5 +17,9 @@ EXPOSE 8888
 RUN /opt/conda/bin/conda run -n project anaconda-project prepare --directory /opt/project \
   && /opt/conda/bin/conda clean --all -y
 
+# trust the notebook
+RUN /opt/conda/bin/conda run -n project anaconda-project run \
+  --directory /opt/project trust
+
 # runs anaconda project
-ENTRYPOINT /home/anaconda/docker-entrypoint.sh
+ENTRYPOINT ["/docker-entrypoint.sh"]
