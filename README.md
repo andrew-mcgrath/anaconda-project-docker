@@ -13,7 +13,8 @@ The container delivers is a trusted jupyter notebook, exposed via http, on port 
 To build the container image simply execute a standard docker build command.
 
 ```bash
-docker build -t anaconda-project .
+docker build --build-arg VCS_REF=$(git rev-parse --short HEAD) \
+  --build-arg BUILD_DATE=$(date -u +”%Y-%m-%dT%H:%M:%SZ”) -t ap-trusted-notebook .
 ```
 
 ### Run
@@ -22,5 +23,5 @@ To run the container port `8888` needs to be exposed to the host or service depe
 This will allow the `jupyter notebook` to be accessed via http.
 
 ```bash
-docker run -it --rm -p 8888:8888 anaconda-project
+docker run -it --rm -p 8888:8888 ap-trusted-notebook
 ```
