@@ -1,4 +1,9 @@
-![Docker Build](https://img.shields.io/docker/automated/amcgrath/ap-trusted-notebook) ![Docker Build](https://img.shields.io/docker/build/amcgrath/ap-trusted-notebook)
+[![Docker Automated](https://img.shields.io/docker/automated/amcgrath/ap-trusted-notebook)](https://hub.docker.com/repository/docker/amcgrath/ap-trusted-notebook/builds) 
+[![Docker Builds](https://img.shields.io/docker/build/amcgrath/ap-trusted-notebook)](https://hub.docker.com/repository/docker/amcgrath/ap-trusted-notebook/builds)
+![Github License](https://img.shields.io/github/license/andrew-mcgrath/ap-trusted-notebook)
+![Github Release](https://img.shields.io/github/v/release/andrew-mcgrath/ap-trusted-notebook)
+
+
 # Purpose
 
 This project was created to prove if an `anaconda-project` could be used to serve up a trusted `jupyter` notebook via
