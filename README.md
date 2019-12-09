@@ -14,10 +14,6 @@ service such as `kubernetes` or the AWS Elastic Container Service (ECS).
 
 The container delivers is a trusted jupyter notebook, exposed via http, on port 8888.
 
-### Hub
-
-https://hub.docker.com/repository/docker/amcgrath/ap-trusted-notebook
-
 ### Build Locally
 
 To build the container image, simply execute a standard docker build command.
