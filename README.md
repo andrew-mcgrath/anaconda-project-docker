@@ -1,3 +1,4 @@
+![Docker Build](https://img.shields.io/docker/automated/amcgrath/ap-trusted-notebook) ![Docker Build](https://img.shields.io/docker/build/amcgrath/ap-trusted-notebook)
 # Purpose
 
 This project was created to prove if an `anaconda-project` could be used to serve up a trusted `jupyter` notebook via
