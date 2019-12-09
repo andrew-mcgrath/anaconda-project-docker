@@ -1,4 +1,4 @@
-[![Docker Automated](https://img.shields.io/docker/cloud/automated/amcgrath/ap-trusted-notebook)](https://hub.docker.com/repository/docker/amcgrath/ap-trusted-notebook/builds) 
+[![Docker Automated](https://img.shields.io/docker/cloud/automated/amcgrath/ap-trusted-notebook)](https://hub.docker.com/repository/docker/amcgrath/ap-trusted-notebook) 
 [![Docker Builds](https://img.shields.io/docker/cloud/build/amcgrath/ap-trusted-notebook)](https://hub.docker.com/repository/docker/amcgrath/ap-trusted-notebook/builds)
 ![Github License](https://img.shields.io/github/license/andrew-mcgrath/ap-trusted-notebook)
 ![Github Release](https://img.shields.io/github/v/release/andrew-mcgrath/ap-trusted-notebook)
