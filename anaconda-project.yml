@@ -8,7 +8,7 @@
 #
 # Set the 'name' key to name your project
 #
-name: anaconda-project-docker
+name: ap-trusted-notebook
 
 #
 # Set the 'icon' key to give your project an icon
@@ -18,7 +18,7 @@ icon:
 #
 # Set a one-sentence-or-so 'description' key with project details
 #
-description: Example notebook running in docker with anaconda project
+description: Example trusted and secure notebook running in docker via anaconda project
 
 #
 # In the commands section, list your runnable scripts, notebooks, and other code.
